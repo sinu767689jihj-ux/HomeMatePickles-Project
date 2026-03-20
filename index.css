@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 20 20% 15%;
+
+    --card: 36 30% 95%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 36 33% 97%;
+    --popover-foreground: 20 20% 15%;
+
+    --primary: 25 90% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 36 40% 90%;
+    --secondary-foreground: 20 20% 15%;
+
+    --muted: 36 20% 92%;
+    --muted-foreground: 20 10% 50%;
+
+    --accent: 145 40% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 25 90% 52%;
+
+    --radius: 0.75rem;
+
+    --warm: 30 60% 96%;
+    --warm-foreground: 20 30% 30%;
+    --amber: 38 92% 50%;
+    --amber-foreground: 0 0% 100%;
+
+    --sidebar-background: 36 30% 95%;
+    --sidebar-foreground: 20 20% 15%;
+    --sidebar-primary: 25 90% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 36 40% 90%;
+    --sidebar-accent-foreground: 20 20% 15%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 25 90% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
